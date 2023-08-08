@@ -5,28 +5,28 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String word=scanner.nextLine();
       try {
-          Enum enume=
-                  Enum.valueOf(word.toUpperCase());
-          switch (word) {
-              case "MONDAY":
-                  System.out.println("texnikalik sabak");
+          Days days=
+                  Days.valueOf(word.toUpperCase());
+          switch (days) {
+              case MONDAY:
+                  System.out.println("technikalik sabak");
                   break;
-              case "TUESDAY":
-                  System.out.println("texnikalik anglistili");
+              case TUESDAY:
+                  System.out.println("technikalik anglistili");
                   break;
-              case "WEDNESDAY":
-                  System.out.println("texnikaik sabak");
+              case WEDNESDAY:
+                  System.out.println("technikaik sabak");
                   break;
-              case "THURSDAY":
-                  System.out.println("texnikali sabak");
+              case THURSDAY:
+                  System.out.println("technikali sabak");
                   break;
-              case "FRIDAY":
-                  System.out.println("texnikalik saba");
+              case FRIDAY:
+                  System.out.println("technikalik saba");
                   break;
-              case "SATURDAY":
-                  System.out.println("texnikalik sabag");
+              case SATURDAY:
+                  System.out.println("technikalik sabag");
                   break;
-              case "SUNDAY":
+              case SUNDAY:
                   System.out.println("sabak jok");
           }
       }catch (IllegalArgumentException e) {
